@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_loginpage_to_timetable"
             app:destination="@id/timetable" />
+        <action
+            android:id="@+id/action_loginpage_to_join"
+            app:destination="@id/join" />
     </fragment>
     <fragment
         android:id="@+id/timetable"
@@ -59,4 +62,13 @@
         android:name="com.example.kauhelper.mypage"
         android:label="fragment_mypage"
         tools:layout="@layout/fragment_mypage" />
+    <fragment
+        android:id="@+id/join"
+        android:name="com.example.kauhelper.join"
+        android:label="fragment_join"
+        tools:layout="@layout/fragment_join" >
+        <action
+            android:id="@+id/action_join_to_loginpage"
+            app:destination="@id/loginpage" />
+    </fragment>
 </navigation>

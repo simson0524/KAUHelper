@@ -6,11 +6,69 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+    <Button
+        android:id="@+id/btn6_timetable"
+        android:layout_width="112dp"
+        android:layout_height="61dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:srcCompat="@drawable/transportation" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn1_transportation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn2_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn3_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn4_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn5_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            android:visibility="invisible" />
+    </LinearLayout>
 
     <TableLayout
         android:id="@+id/table_subway"

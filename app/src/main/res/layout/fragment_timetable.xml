@@ -88,7 +88,7 @@
 
                 <TextView
                     android:id="@+id/txt_index_mon"
-                    android:layout_width="wrap_content"
+                    android:layout_width="61dp"
                     android:layout_height="wrap_content"
                     android:text="월" />
 
@@ -101,13 +101,13 @@
                 <TextView
                     android:id="@+id/txt_index_wed"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="수" />
 
                 <TextView
                     android:id="@+id/txt_index_thur"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="목" />
 
                 <TextView
