@@ -6,29 +6,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.kauhelper.databinding.FragmentJoinBinding
+import com.example.kauhelper.databinding.FragmentAdminBinding
 
 
-class join : Fragment() {
-    var binding: FragmentJoinBinding? = null
+class admin : Fragment() {
+    var binding: FragmentAdminBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentJoinBinding.inflate(inflater)
+        binding = FragmentAdminBinding.inflate(inflater)
         return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding?.btnConfirm?.setOnClickListener {
-            //TODO : store input info at server if input is new
-            findNavController().navigate(R.id.action_join_to_settings)
-        }
-        binding?.btnBack?.setOnClickListener {
-            findNavController().navigate(R.id.action_join_to_loginpage)
+        binding?.btnConfirm1?.setOnClickListener {
+            findNavController().navigate(R.id.action_admin_to_mypage)
         }
     }
 

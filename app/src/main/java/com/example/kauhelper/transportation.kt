@@ -35,7 +35,7 @@ class transportation : Fragment() {
            metro21Destination = it.getString("Destination")
            metro22Destination = it.getString("Destination")
 
-            //TODO
+            //TODO : get bundle of other textviews
         }
     }
 
@@ -54,8 +54,25 @@ class transportation : Fragment() {
 
         // binding?.txt~~~
 
-        binding?.btn1Transportation?.setOnClickListener {
-            findNavController().navigate(R.id.action_transportationFragment_to)
+        binding?.btn10?.setOnClickListener {
+            findNavController().navigate(R.id.action_transportation_to_timetable)
+        }
+        binding?.btn2?.setOnClickListener {
+            findNavController().navigate(R.id.action_transportation_to_map)
+        }
+        binding?.btn3?.setOnClickListener {
+            findNavController().navigate(R.id.action_transportation_to_calendar)
+        }
+        binding?.btn4?.setOnClickListener {
+            findNavController().navigate(R.id.action_transportation_to_menu)
+        }
+        binding?.btn5?.setOnClickListener {
+            findNavController().navigate(R.id.action_transportation_to_mypage)
         }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    } // To protect memory
 }

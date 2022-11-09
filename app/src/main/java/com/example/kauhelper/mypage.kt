@@ -5,55 +5,54 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.kauhelper.databinding.FragmentMypageBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [mypage.newInstance] factory method to
- * create an instance of this fragment.
- */
 class mypage : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    var binding: FragmentMypageBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mypage, container, false)
+        binding = FragmentMypageBinding.inflate(inflater)
+        return binding?.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment mypage.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            mypage().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding?.btn50?.setOnClickListener {
+            findNavController().navigate(R.id.action_mypage_to_timetable)
+        }
+        binding?.btn51?.setOnClickListener {
+            findNavController().navigate(R.id.action_menu_to_transportation)
+        }
+        binding?.btn52?.setOnClickListener {
+            findNavController().navigate(R.id.action_mypage_to_map)
+        }
+        binding?.btn53?.setOnClickListener {
+            findNavController().navigate(R.id.action_mypage_to_calendar)
+        }
+        binding?.btn54?.setOnClickListener {
+            findNavController().navigate(R.id.action_mypage_to_menu)
+        }
+
+
+        binding?.btnAdmin?.setOnClickListener {
+            findNavController().navigate(R.id.action_mypage_to_admin)
+        }
+        binding?.btnSettings?.setOnClickListener {
+            findNavController().navigate(R.id.action_mypage_to_settings)
+        }
+        binding?.btnLogout?.setOnClickListener {
+            findNavController().navigate(R.id.action_mypage_to_loginpage)
+        }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    } // To protect memory
 }

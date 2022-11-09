@@ -24,20 +24,25 @@ class timetable : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding?.btn1Transportation?.setOnClickListener {
+        binding?.btn1?.setOnClickListener {
             findNavController().navigate(R.id.action_timetable_to_transportation)
         }
-        binding?.btn2Map?.setOnClickListener {
+        binding?.btn2?.setOnClickListener {
             findNavController().navigate(R.id.action_timetable_to_map)
         }
-        binding?.btn3Calendar?.setOnClickListener {
+        binding?.btn3?.setOnClickListener {
             findNavController().navigate(R.id.action_timetable_to_calendar)
         }
-        binding?.btn4Menu?.setOnClickListener {
+        binding?.btn4?.setOnClickListener {
             findNavController().navigate(R.id.action_timetable_to_menu)
         }
-        binding?.btn5Mypage?.setOnClickListener {
+        binding?.btn5?.setOnClickListener {
             findNavController().navigate(R.id.action_timetable_to_mypage)
         }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    } // To protect memory
 }

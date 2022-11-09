@@ -7,7 +7,7 @@
     android:background="#FFFFFF">
 
     <Button
-        android:id="@+id/btn6_timetable"
+        android:id="@+id/btn_10"
         android:layout_width="112dp"
         android:layout_height="61dp"
         android:text="Button"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/btn1_transportation"
+            android:id="@+id/btn_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -38,7 +38,7 @@
             android:visibility="invisible" />
 
         <Button
-            android:id="@+id/btn2_map"
+            android:id="@+id/btn_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -46,7 +46,7 @@
             android:visibility="invisible" />
 
         <Button
-            android:id="@+id/btn3_calendar"
+            android:id="@+id/btn_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
             android:visibility="invisible" />
 
         <Button
-            android:id="@+id/btn4_menu"
+            android:id="@+id/btn_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
             android:visibility="invisible" />
 
         <Button
-            android:id="@+id/btn5_mypage"
+            android:id="@+id/btn_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

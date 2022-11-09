@@ -23,7 +23,7 @@ class loginpage : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.btnLogin?.setOnClickListener {
-            if(true) { //TODO : check that input is correct. Instead of 'true'
+            if(true) { //TODO : check that input is correct or not. Instead of 'true'
                 findNavController().navigate(R.id.action_loginpage_to_timetable)
             }
             else{
