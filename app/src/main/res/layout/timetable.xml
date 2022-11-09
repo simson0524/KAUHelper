@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:srcCompat="@drawable/timetable" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,18 +16,23 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent">
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="invisible">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn1_traffic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="btn_timetable_transportation"
-                android:textSize="0.1sp" />
+                android:textSize="0.1sp"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button4"
@@ -34,7 +40,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="btn_timetable_map"
-                android:textSize="0.1sp" />
+                android:textSize="0.1sp"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button3"
@@ -42,7 +49,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="btn_timetable_calendar"
-                android:textSize="0.1sp" />
+                android:textSize="0.1sp"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button6"
@@ -50,7 +58,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="btn_timetable_menu"
-                android:textSize="0.1sp" />
+                android:textSize="0.1sp"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/button5"
@@ -58,7 +67,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="btn_timetable_mypage"
-                android:textSize="0.1sp" />
+                android:textSize="0.1sp"
+                android:visibility="invisible" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

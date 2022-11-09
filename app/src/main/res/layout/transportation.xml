@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:srcCompat="@drawable/transportation" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +19,7 @@
             android:id="@+id/layout_metro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="168dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,21 +46,28 @@
                     android:layout_width="100dp"
                     android:layout_height="38dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#2196F3" />
 
                 <TextView
                     android:id="@+id/txt_des12"
                     android:layout_width="60dp"
                     android:layout_height="38dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="용문"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_12"
                     android:layout_width="100dp"
                     android:layout_height="38dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#2196F3" />
             </LinearLayout>
 
             <LinearLayout
@@ -72,28 +80,39 @@
                     android:layout_width="60dp"
                     android:layout_height="38dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="대곡"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_21"
                     android:layout_width="100dp"
                     android:layout_height="38dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#2196F3" />
 
                 <TextView
                     android:id="@+id/txt_des22"
                     android:layout_width="60dp"
                     android:layout_height="38dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="지평"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_22"
                     android:layout_width="100dp"
                     android:layout_height="38dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="#2196F3" />
             </LinearLayout>
         </LinearLayout>
 
@@ -101,7 +120,7 @@
             android:id="@+id/layout_7726"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="374dp"
+            android:layout_marginTop="382dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -112,21 +131,25 @@
                 android:layout_width="160dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F44336" />
 
             <TextView
                 android:id="@+id/txt_7726_2"
                 android:layout_width="160dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F44336" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout_022A"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="530dp"
+            android:layout_marginTop="538dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -137,16 +160,78 @@
                 android:layout_width="160dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F44336" />
 
             <TextView
                 android:id="@+id/txt_022_2"
                 android:layout_width="160dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#F44336" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_transportation_transportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_transporation_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_transportation_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_transportation_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_transportation_mypage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button"
+                android:visibility="invisible" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_transportation_timetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible" />
 
 </FrameLayout>
